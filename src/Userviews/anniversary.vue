@@ -14,7 +14,7 @@
                 <div id="middlewords">
                     <span style="font-size:18px;letter-spacing: 2px;">{{item.content}}</span><br />
                     <span style="position: relative;top:8px;">
-                        <svg class="iconcolor" aria-hidden="true" class="svg">
+                        <svg class="iconcolor iconsvg" aria-hidden="true">
                             <use xlink:href="#icon-rili1"></use>
                         </svg>
                         <span style="color:#828282">{{$moment(item.time).format('YYYY-MM-DD')}}</span>

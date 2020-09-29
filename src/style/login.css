@@ -1,26 +1,25 @@
-*{
+* {
   scrollbar-width: none;
 }
-#login{
+#login {
   position: absolute;
-  width:100%;
-  height:100%;
-  background:#fff;
-}
-#loginMain{
-  margin-top:30px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 #login .mint-field-other {
-    top:-1px;
-    right: 100% ;
-    position: relative;
-    color: #888;
-  }
-  #login .mint-field .mint-cell-value{
-    margin-left: 10%;
-    height:60px;
-  }
-  #loginBtn{
-    margin-left:136px;
-  }
-  
+  top: -1px;
+  right: 100% ;
+  position: relative;
+  color: #888;
+}
+#login .mint-field .mint-cell-value {
+  margin-left: 10%;
+  height: 60px;
+}
+#loginMain {
+  margin-top: 30px;
+}
+#loginBtn {
+  margin-left: 136px;
+}

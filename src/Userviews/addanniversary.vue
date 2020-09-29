@@ -22,7 +22,7 @@
       </van-popup>
     </div>
     <div id="chooseimg">
-      <i class="iconfont icon-icon4" class="iconchoose"></i>
+      <i class="iconfont icon-icon4 tochoose2"></i>
       <span class="tochoose">图标选择</span>
       <van-divider />
       <div id="chooseIcon" v-for="item in list">
