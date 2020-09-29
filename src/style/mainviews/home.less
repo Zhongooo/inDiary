@@ -1,0 +1,71 @@
+@import "../common.less";
+body {
+    min-width:320px;
+    width:15rem;// 750 / 50
+    margin:0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+
+@baseFont: 50;
+
+.triangle {
+    width: 40rem / @baseFont;
+    height: 40rem / @baseFont;
+}
+
+.rightwea {
+    position: relative;
+    top: 18rem / @baseFont;
+} 
+.homeMain {
+    
+    .vantitle {
+        margin-top: 60rem / @baseFont;
+    }
+    .record {
+        margin-top: 10rem / @baseFont;
+        height:250rem / @baseFont;
+        .cal {
+            float: left;
+            margin-left: 90rem / @baseFont;
+            margin-top: 30rem / @baseFont; 
+            width: 150rem / @baseFont;
+            height: 150rem / @baseFont;
+            background: url(../../assets/pic/cal.png) no-repeat;
+            background-size: 150rem / @baseFont 150rem / @baseFont;
+            #calDate {
+                position: relative;
+                left: 36rem / @baseFont;
+                top: 40rem / @baseFont;
+                font-size: 70rem / @baseFont;
+            }
+        }
+        .recordMain {
+            float: left;
+            margin-left: 60rem / @baseFont;
+            span {
+                color: #666;
+                font-size: 35rem / @baseFont;
+                letter-spacing: 2rem / @baseFont;    
+            }
+        }
+    }
+
+    .viewo {
+        font-size: 36rem / @baseFont;
+        border: 1px dashed #9dd8e06b;
+        border-radius: 6px;
+        height: 280px;
+        span {
+            font-weight: bold;
+            font-size: 56rem / @baseFont;
+            margin-left: 48rem / @baseFont;
+        }
+        .iconsite {
+            margin-left: 290rem / @baseFont;
+        }
+    }
+    
+}

@@ -1,42 +1,42 @@
 <template>
     <div>
         <mt-header fixed title="我的日记">
-            <router-link to="/diary/weather" slot="right" id="rightwea">
+            <router-link to="/diary/weather" slot="right" class="rightwea">
                 <img :src='require(`../assets/pic/realwea/${wea_img}.png`)' width="30px" height="30px">
                 <span style="position: relative;top:-6px;left:2px;">{{tem}}°</span><br />
                 <span style="font-size: 13px;margin-right:8px;">{{city}}</span>&nbsp;
                 <span style="font-size: 13px;">{{wea}}</span>
-            </router-link>
-                    
+            </router-link>  
         </mt-header>
         <div class="homeMain">
-            <van-grid clickable icon-size="36px" :column-num="2">
+            <van-grid clickable icon-size="1.5rem" :column-num="2" class="vantitle">
                 <van-grid-item icon="edit" text="记一记" to="/diary/weather" />
                 <van-grid-item icon="notes-o" text="日记本" to="/diary/diaryBook" />
             </van-grid>
             <div class="record">
                 <div class="cal">
-                    <span id="calDate" style="font-size:28px">{{this.$moment().format('DD')}}</span>
+                    <span id="calDate">{{this.$moment().format('DD')}}</span>
                 </div>
-                <div class="recordMain" style="position:absolute;top:0">
-                    <span><img src="../assets/pic/上.png" style="width:12px;height:12px" />
+                <div class="recordMain">
+                    <span><img src="../assets/pic/上.png" class="triangle" />
                         本月连续记录:&nbsp{{recordmonth}}&nbsp天</span><br />
-                    <span><img src="../assets/pic/上.png" style="width:12px;height:12px" />
+                    <span><img src="../assets/pic/上.png" class="triangle" />
                         本周连续记录:&nbsp{{recordweek}}&nbsp天</span><br />
-                    <span><img src="../assets/pic/上.png" style="width:12px;height:12px" />
+                    <span><img src="../assets/pic/上.png" class="triangle" />
                         共记录心情:&nbsp{{recordmood}}&nbsp条</span>
                 </div>
             </div>
             <div class="viewo" v-show="showMood">
-                <span style="font-weight: bold;font-size:26px;margin-left: 16px;">
-                    {{this.$moment().format('MM')>=10?this.$moment().format('MM'):this.$moment().format('M')}}&nbsp</span>月日记心情分布
-                <van-icon :name="icon" @click="showSun" size="22px" style="left:180px;top:3px" />
+                <span>
+                    {{this.$moment().format('MM')>=10?this.$moment().format('MM'):this.$moment().format('M')}}&nbsp
+                </span>月日记心情分布
+                <van-icon :name="icon" @click="showSun" size="22px" class="iconsite" />
                 <oview></oview>
             </div>
             <div class="viewo" v-show="!showMood">
-                <span style="font-weight: bold;font-size:26px;margin-left: 16px;">
+                <span>
                     {{this.$moment().format('MM')>=10?this.$moment().format('MM'):this.$moment().format('M')}}&nbsp</span>月日记天气分布
-                <van-icon :name="icon2" @click="notshowSun" size="22px" style="left:180px;top:3px" />
+                <van-icon :name="icon2" @click="notshowSun" size="22px" class="iconsite" />
                 <sun></sun>
             </div>
         </div>
@@ -105,11 +105,6 @@
         }
     };
 </script>
-<style>
-    body {
-        background: #F9F9F9;
-    }
-</style>
 <style scoped>
-    @import '../style/home.css';
+    @import '../style/mainviews/home.css'
 </style>

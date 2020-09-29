@@ -1,0 +1,99 @@
+@import "../common.less";
+body {
+    min-width:320px;
+    width:15rem;// 750 / 50
+    margin:0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+
+.w {
+    width:15rem;
+}
+
+@baseFont: 50;
+
+.color {
+    color:#666;
+}
+
+.contentout{
+    position: relative;
+    
+    width:94%;
+    top: 30rem / @baseFont;
+    i {
+        font-size:100rem / @baseFont;
+    }
+    .treeTitle {
+        font-size:46rem / @baseFont;
+        margin-left: 36rem / @baseFont;
+    }
+    .avatar {
+        width: 90rem / @baseFont;
+        height: 90rem / @baseFont;
+        margin-left: 36rem / @baseFont;
+        border-radius: 50%;
+    }
+    .contentImg {
+        width: 180rem / @baseFont;
+        height: 180rem / @baseFont;
+        margin-left: 30rem / @baseFont;
+    }
+    .maincontent {
+        color:#828282;
+        font-size: 36rem / @baseFont;
+        letter-spacing: 2rem / @baseFont;
+        margin-left: 26rem / @baseFont;
+        margin-top: 3rem / @baseFont;
+    }
+    .treename{
+        font-size: 40rem / @baseFont;
+        position: relative;
+        top: -25rem / @baseFont;
+        left: 18rem / @baseFont;
+    }
+    .planb {
+        float: left;
+    }
+    .lastcontent {
+        display: flex;
+        font-size: 40rem / @baseFont;
+        .icon-icon7:before , .icon-shouye1:before{
+            font-size: 70rem / @baseFont;
+        }
+        .contentOne{
+            flex: 1;
+            background-color: #fff;
+            position: relative;
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            span {
+                position: absolute;
+                left: 70%;
+                top: 50%;
+                transform: translate(-70%,-20%);
+            }
+        }
+        .contentTwo{
+            flex: 1;
+            position: relative;
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            span {
+                display: inline-block;
+                margin-left: 250rem / @baseFont;
+                margin-top: 30rem / @baseFont;
+            }
+        }
+    }
+}
