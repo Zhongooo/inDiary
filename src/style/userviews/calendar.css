@@ -1,0 +1,53 @@
+.mint-header{
+    font-size:17px;
+    color:black;
+    background:#fff;
+}
+.calColor{
+    position: relative;
+    top:30px;
+    width:100px;
+    height:30px;
+    color:#fff;
+}
+#diarylist{
+  position: relative;
+  width:94%;
+  height:130px;
+  left:12px;
+  border-radius:10px;
+  background:#fff;
+  margin-bottom: 12px;
+  box-shadow: #eeeded 0px 0px 2px 2px;
+}
+#listLeft{
+  position: relative;
+  top:20px;
+  left:20px;
+  width:56%;
+  height:100px;
+  float: left;
+}
+#titles{
+  position: absolute;
+  font-size:19px;
+  margin-top:8px;
+  margin-bottom:8px;
+}
+#moods{
+  position: relative;
+  top:48px;
+  font-size:14px;
+  color:#707070;
+  letter-spacing:3px;
+}
+#photos{
+  float:left;
+  position: relative;
+  right:-36px;
+  top:4px;
+}
+#photos img{
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}

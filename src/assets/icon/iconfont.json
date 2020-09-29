@@ -1,0 +1,303 @@
+{
+  "id": "1810891",
+  "name": "inDiary",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "795504",
+      "name": "点赞",
+      "font_class": "ai-like",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "4735325",
+      "name": "icon_点赞-面",
+      "font_class": "icon_dianzan-mian",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "768813",
+      "name": "个性化",
+      "font_class": "shouye2",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "777843",
+      "name": "赞",
+      "font_class": "icon7",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "6268303",
+      "name": "返回",
+      "font_class": "fanhui2",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "11494980",
+      "name": "返回",
+      "font_class": "fanhui3",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "765558",
+      "name": "提醒",
+      "font_class": "shouye",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "765611",
+      "name": "消息",
+      "font_class": "shouye1",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "784528",
+      "name": "日历",
+      "font_class": "icon2",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "1002614",
+      "name": "文本",
+      "font_class": "icon3",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "1002631",
+      "name": "图片",
+      "font_class": "icon4",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "1082780",
+      "name": "编辑",
+      "font_class": "icon5",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "1273256",
+      "name": "删除",
+      "font_class": "icon6",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1082775",
+      "name": "输入",
+      "font_class": "icon1",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "14009239",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "796487",
+      "name": "完成",
+      "font_class": "icon",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "7587932",
+      "name": "保存",
+      "font_class": "baocun",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "3050480",
+      "name": "编辑",
+      "font_class": "edit2",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2506167",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "8453559",
+      "name": "返回",
+      "font_class": "fanhui1",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "554032",
+      "name": "笔",
+      "font_class": "iconset0137",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1345575",
+      "name": "线描－本子",
+      "font_class": "icon-test2",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "7550210",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "8102718",
+      "name": "分享",
+      "font_class": "icon-test1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "9666176",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "587443",
+      "name": "时间",
+      "font_class": "shijian01",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "2742655",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "14478362",
+      "name": "时间轴",
+      "font_class": "fuhao-shijianzhou",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "4329713",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "5920503",
+      "name": "用户",
+      "font_class": "dashujukeshihuaico-",
+      "unicode": "e7ff",
+      "unicode_decimal": 59391
+    },
+    {
+      "icon_id": "10593828",
+      "name": "笔记本,记事本,本子,辅助方法_jurassic",
+      "font_class": "jurassic_text",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "10593831",
+      "name": "笔记本,记事本,本子,辅助方法_jurassic",
+      "font_class": "jurassic_text1",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "11749368",
+      "name": "笔记",
+      "font_class": "biji",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "13625156",
+      "name": "果树",
+      "font_class": "guoshu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5699794",
+      "name": "icon_me",
+      "font_class": "icon-",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "8361789",
+      "name": "开心",
+      "font_class": "kaixin",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "14312145",
+      "name": "树",
+      "font_class": "shu6",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "553899",
+      "name": "笔记",
+      "font_class": "iconset0117",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "2357501",
+      "name": "个人中心灰",
+      "font_class": "gerenzhongxinhui",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "3755550",
+      "name": "笔记",
+      "font_class": "icon-test",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "3887020",
+      "name": "日记本 diary",
+      "font_class": "miao",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "9113020",
+      "name": "笔记",
+      "font_class": "tubiao-",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+#checked {
+
+    opacity: 0.7;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 46px;
+    top: -6px;
+    border-radius: 10px;
+    float: left;
+    z-index: 2;
+  }
+
+  #chooseimg {
+    background: #fff;
+    position: relative;
+    top: 58px;
+    height: 320px;
+    width: 96%;
+    left: 2%;
+    border-radius: 10px;
+  }
+
+  #realimg {
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    left: -10px;
+
+    margin-bottom: 12px;
+  }
+
+  .mint-field .mint-cell-value {
+    margin-left: 10%;
+    height: 60px;
+  }
+
+  .mint-field-other {
+    top: -1px;
+    right: 100%;
+    position: relative;
+    color: #888;
+  }
+
+  .tochoose {
+    position: relative;
+    left: 18px;
+    letter-spacing: 2px;
+    color: #666;
+  }
+
+  .iconchoose {
+    color: #666;
+    position: relative;
+    left: 10px;
+    top: 6px;
+  }

@@ -1,0 +1,12 @@
+#register{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:#fff;
+ }
+#registerMain{
+margin-top:20px;
+ }
+  #registerBtn{
+    margin-left:136px;
+  }
