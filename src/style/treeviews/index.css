@@ -70,10 +70,21 @@ body {
 .color {
   color: #666;
 }
+.treeContent {
+  position: relative;
+  top: -1.6rem;
+}
 .contentout {
   position: relative;
   width: 94%;
   top: 0.6rem;
+}
+.contentout .clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .contentout i {
   font-size: 2rem;
@@ -148,4 +159,11 @@ body {
   display: inline-block;
   margin-left: 5rem;
   margin-top: 0.6rem;
+}
+.checkpic {
+  float: left;
+  width: 30%;
+}
+.iconfontSize {
+  font-size: 0.8rem;
 }

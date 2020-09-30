@@ -17,12 +17,21 @@ body {
 .color {
     color:#666;
 }
-
+.treeContent {
+    position: relative;
+    top: -80rem / @baseFont;
+}
 .contentout{
     position: relative;
-    
     width:94%;
     top: 30rem / @baseFont;
+    .clearfix::after {
+        content:"";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
     i {
         font-size:100rem / @baseFont;
     }
@@ -97,3 +106,13 @@ body {
         }
     }
 }
+.checkpic {
+    float: left;
+    width: 30%;
+}
+
+.iconfontSize {
+    font-size: 40rem / @baseFont;
+}
+
+

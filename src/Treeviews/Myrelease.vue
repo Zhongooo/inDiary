@@ -7,24 +7,33 @@
                     
         </mt-header>
         <div class="treeContent" style="position: relative;top:36px;">
-            <div class="maincontent">
-                <div class="contentout" v-for="item in list">
-                    <span class="treeTitle" style="font-size:16px;">{{item.treetitle}}</span><br />
+
+            <div class="contentout w" v-for="item in list">
+                <span class="treeTitle">{{item.treetitle}}</span><br />
+                <div class="clearfix">
                     <div :style="item.tree_pictures[0]==null?style2:style1" @click="getDetail(item.id)">
-                        <img src="../assets/pic/good.jpg" width="32px" height="32px" style="border-radius: 20px;">
-                        <span class="treename">我</span><br />
-                        <span class="van-multi-ellipsis--l2 content12">{{item.treecontent}}</span>
+                        <img src="../assets/pic/good.jpg" class="avatar">
+                        <span class="treename color">我</span><br />
+                        <span class="maincontent van-multi-ellipsis--l2">{{item.treecontent}}</span>
                     </div>
                     <div v-if="item.tree_pictures[0]!=null" class="checkpic">
                         <img :src='item.tree_pictures[0]!=null?require(`../../../../koaS/koaPass/public/tree/${item.tree_pictures[0].path}`):null'
-                            width="80px" height="80px" />
+                            width="80rem" height="80rem" />
                     </div>
-                    <div :class="item.tree_pictures[0]==null?like:like2">
-                        <van-icon name="good-job-o" /><span style="color:#666;">{{item.thumbs}}</span>
-                        <van-icon name="comment-o" style="margin-left:20px;" /><span style="color:#666;">666</span>
-                    </div>
-                    <van-divider />
                 </div>
+                <div :class="item.tree_pictures[0]==null?like:like2" class="lastcontent w">
+                    <span class="contentOne">
+                        <van-icon name="good-job-o" size="1.5rem" />
+                        <span class="color iconfontSize">{{item.thumbs}}</span>
+                    </span>
+                    <span class="contentTwo">
+                        <van-icon name="comment-o" size="1.5rem" />
+                        <span class="color iconfontSize">666</span>
+                    </span>
+
+                </div>
+                <van-divider />
+
             </div>
 
 
@@ -41,8 +50,8 @@
                 pic: '1',
                 style1: 'float: left;width:70%;',
                 style2: '',
-                like: 'position:relative;margin-top:10px;',
-                like2: 'position: absolute;top:-30px;left:3px;',
+                like: 'margin-top:10px;',
+                like2: 'position: relative;top:-30px;left:3px;',
                 list: [],
                 arr: []
             }
@@ -73,45 +82,5 @@
     };
 </script>
 <style scoped>
-    .treeContent {
-        position: relative;
-        top: -30px;
-    }
-
-    .maincontent {
-        position: relative;
-        width: 100%;
-        margin-top: 8px;
-        border-radius: 10px;
-        background: #fff;
-    }
-
-    .treename {
-        color: #666;
-        font-size: 14px;
-        position: relative;
-        top: -8px;
-        left: 6px;
-    }
-
-    .contentout {
-        position: relative;
-        left: 13px;
-        width: 94%;
-        top: 10px;
-    }
-
-    .content12 {
-        color: #828282;
-        font-size: 13px;
-        letter-spacing: 2px;
-        margin-top: 1px;
-    }
-
-    .checkpic {
-        float: left;
-        width: 30%;
-        position: relative;
-        right: -20px
-    }
+    @import '../style/treeviews/index.css';
 </style>

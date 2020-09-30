@@ -1,0 +1,72 @@
+@import "../common.less";
+body {
+    min-width:320px;
+    width:15rem;// 750 / 50
+    margin:0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+
+@baseFont: 50;
+
+.w {
+    width:15rem;
+}
+.bg {
+    width:100%;
+    height: 320rem / @baseFont;
+    background:#b0e6d1;
+    .seticon1 {
+        width: 90rem / @baseFont;
+        height: 90rem / @baseFont;
+    }
+    .seticon2 {
+        position:absolute;
+        right: 20rem / @baseFont;
+        width: 78rem / @baseFont;
+        height: 78rem / @baseFont;
+    }
+    .bg-bg {
+        position: absolute;
+        top: 160rem / @baseFont;
+        height: 220rem / @baseFont;
+        background: #fff;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        .avatar {
+            width: 170rem / @baseFont;
+            height: 170rem / @baseFont;
+            position:absolute;
+            top:-90rem / @baseFont;
+            left:38%;
+            border-radius: 50%;
+        }
+        .uname {
+            margin-top: 90rem / @baseFont;
+            text-align: center;
+            font-size:46rem / @baseFont;
+            color:#828282;
+        }
+      }
+}
+
+.indexlist {
+    position: relative;
+    top: 10rem / @baseFont;
+    .iconSite {
+        width: 60rem / @baseFont;
+        height: 60rem / @baseFont;
+        margin-right: 38rem / @baseFont;
+    }
+    .iconSite2 {
+        width: 70rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin-right: 26rem / @baseFont;
+    }
+    .iconSite3 {
+        width: 50rem / @baseFont;
+        height: 50rem / @baseFont;
+        margin-right: 26rem / @baseFont;
+    }
+}
