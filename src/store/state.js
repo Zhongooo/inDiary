@@ -1,5 +1,6 @@
 const state = {
-    catchList:[]
-  };
-  
+  token: '',
+  catchList: []
+};
+
 export default state;

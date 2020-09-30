@@ -69,11 +69,12 @@
             console.log('密码错误')
           }
           if (res.code == 1) {
-            localStorage.setItem('token', res.token)
+            this.$store.commit('set_token', res.token);
+
             const userInfo = JSON.stringify(res.userInfo);
             localStorage.setItem('userInfo', userInfo)
             const rolerole = JSON.parse(localStorage.getItem('userInfo'));
-            if (localStorage.getItem('token')) {
+            if (this.$store.state.token) {
               this.$router.push('/user')
             }
           }

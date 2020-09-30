@@ -27,8 +27,8 @@ const routes = [
       default: User,
       foot: Tab
     },
-    meta:{
-      isLogin:true
+    meta: {
+      isLogin: true
     }
   },
   {
@@ -45,8 +45,8 @@ const routes = [
       default: Tree,
       foot: Tab
     },
-    meta:{
-      isLogin:true
+    meta: {
+      isLogin: true
     }
   },
   {
@@ -56,104 +56,104 @@ const routes = [
       default: Timeline,
       foot: Tab
     },
-    meta:{
-      isLogin:true
+    meta: {
+      isLogin: true
     }
   },
   {
     path: '/register',
     name: 'register',
-    component:() => import('../Userviews/register')
+    component: () => import('../Userviews/register')
   },
   {
     path: '/user/setting',
     name: 'setting',
-    component:() => import('../otherViews/setting')
+    component: () => import('../otherViews/setting')
   },
   {
     path: '/diary/weather',
     name: 'weather',
-    component:() => import('../Diary/weather')
+    component: () => import('../Diary/weather')
   },
   {
     path: '/diary/mood/:weather',
     name: 'mood',
-    component:() => import('../Diary/mood')
+    component: () => import('../Diary/mood')
   },
   {
     path: '/diary/diaryContent/:weather/:mood',
     name: 'diaryContent',
-    component:() => import('../Diary/diaryContent')
+    component: () => import('../Diary/diaryContent')
   },
   {
     path: '/diary/diaryBook',
     name: 'diaryBook',
-    component:() => import('../Diary/diaryBook')
+    component: () => import('../Diary/diaryBook')
   },
   {
     path: '/diary/diaryDetail/:id',
     name: 'diaryDetail',
-    component:() => import('../Diary/diaryDetail')
+    component: () => import('../Diary/diaryDetail')
   },
   {
     path: '/diary/diaryDrafts',
     name: 'diaryDrafts',
-    component:() => import('../Diary/diaryDrafts')
+    component: () => import('../Diary/diaryDrafts')
   },
   {
     path: '/user/calendar',
     name: 'calendar',
-    component:() => import('../Userviews/calendar')
+    component: () => import('../Userviews/calendar')
   },
   {
     path: '/user/personalData',
     name: 'personalData',
-    component:() => import('../Userviews/personalData')
+    component: () => import('../Userviews/personalData')
   },
   {
     path: '/user/diarypassword',
     name: 'diarypassword',
-    component:() => import('../Userviews/diarypassword')
+    component: () => import('../Userviews/diarypassword')
   },
   {
     path: '/user/moodPush',
     name: 'moodPush',
-    component:() => import('../Userviews/moodPush')
+    component: () => import('../Userviews/moodPush')
   },
   {
     path: '/user/moodpushContent/:id/:moodid',
     name: 'moodpushContent',
-    component:() => import('../Userviews/moodpushContent')
+    component: () => import('../Userviews/moodpushContent')
   },
   {
     path: '/user/anniversary',
     name: 'anniversary',
-    component:() => import('../Userviews/anniversary')
+    component: () => import('../Userviews/anniversary')
   },
   {
     path: '/user/addanniversary',
     name: 'addanniversary',
-    component:() => import('../Userviews/addanniversary')
+    component: () => import('../Userviews/addanniversary')
   },
   {
     path: '/tree/release',
     name: 'release',
-    component:() => import('../Treeviews/release')
+    component: () => import('../Treeviews/release')
   },
   {
     path: '/tree/treecontent/:id',
     name: 'treecontent',
-    component:() => import('../Treeviews/treecontent')
-  }, 
+    component: () => import('../Treeviews/treecontent')
+  },
   {
     path: '/tree/Myrelease',
     name: 'Myrelease',
-    component:() => import('../Treeviews/Myrelease')
+    component: () => import('../Treeviews/Myrelease')
   },
   {
     path: '/tree/search',
     name: 'search',
-    component:() => import('../Treeviews/search'),
+    component: () => import('../Treeviews/search'),
     meta: {
       keepAlive: true
     }
@@ -161,17 +161,21 @@ const routes = [
   {
     path: '/user/userOpinion/:id',
     name: 'userOpinion',
-    component:() => import('../Userviews/userOpinion')
-  }, 
+    component: () => import('../Userviews/userOpinion')
+  },
   {
     path: '/Message',
     name: 'Message',
-    component:() => import('../views/Message')
+    component: () => import('../views/Message')
   }
 ]
 
+if (localStorage.getItem('token')) {
+  store.commit('set_token', localStorage.getItem('token'))
+}
+
 const router = new VueRouter({
-  mode:'history',//去掉路由井号＃
+  mode: 'history',//去掉路由井号＃
   routes
 })
 
@@ -179,31 +183,31 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   if (to.name === 'search') {
     store.commit('keepAlive', 'search')
-  }else{
+  } else {
     next()
   }
   if (to.name === 'weather') {
     store.commit('keepAlive', 'weather')
-  }else{
+  } else {
     next()
   }
   if (to.name === 'mood') {
     store.commit('keepAlive', 'mood')
-  }else{
+  } else {
     next()
   }
-  const getToken=localStorage.getItem('token');
+  // const getToken=localStorage.getItem('token');
   if (to.meta.isLogin) {
-   if(getToken){
-       next();
-  }else{
-    next({
-      path:'/login'
-    })
+    if (store.state.token) {
+      next();
+    } else {
+      next({
+        path: '/login'
+      })
+    }
+  } else {
+    next()
   }
-}else{
-  next()
-}
 })
 
 export default router
