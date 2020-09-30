@@ -1,0 +1,50 @@
+@import "../common.less";
+body {
+    min-width:320px;
+    width:15rem;// 750 / 50
+    margin:0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+
+@baseFont: 50;
+
+.w {
+    width:15rem;
+}
+
+.userdatas {
+    .userbg {
+        height: 400rem / @baseFont;
+        background:#b0e6d1;
+    }
+    .bg-css {
+        position: absolute;
+        top: 250rem / @baseFont;
+        height: 200rem / @baseFont;
+        background: lightseagreen;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        .avatar {
+            position: absolute;
+            top: -90rem / @baseFont;
+            left: 38%;
+            width: 160rem / @baseFont;
+            height: 160rem / @baseFont;
+            z-index: 1;
+            border-radius: 50%;
+        }
+    }
+    
+}
+
+
+#camera {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 206px;
+    z-index: 2;
+}

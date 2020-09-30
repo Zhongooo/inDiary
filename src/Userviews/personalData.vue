@@ -1,5 +1,5 @@
 <template>
-    <div style="background: #fff;height:630px">
+    <div class="userdatas">
         <mt-header fixed title="个人资料">
             <router-link to="/user" slot="left">
                 <i class="iconfont icon-fanhui2" style="font-size:20px"></i>
@@ -9,9 +9,9 @@
             </router-link>
                     
         </mt-header>
-        <div style="width:100%;height:200px;background:#b0e6d1;z-index:-2">
-            <div id="bg-css" style="z-index:0">
-                <img :src="imgsrc" @click="setAvatar" width="80px" height="80px" class="myimg">
+        <div class="userbg w">
+            <div class="bg-css w">
+                <img :src="imgsrc" @click="setAvatar" class="avatar">
                 <img src="../assets/pic/相机.png" @click="setAvatar" id="camera">
                 <input type="file" ref="avatarInput" style="display:none" name="file" @change="getFile($event)">
 
@@ -120,46 +120,26 @@
     }
 </script>
 <style scoped>
+    @import '../style/userviews/datas.css';
+
     .mint-header {
-        font-size: 17px;
+        font-size: 0.7rem;
         color: black;
         background: #fff;
-    }
-
-    #bg-css {
-        width: 100%;
-        height: 80px;
-        background: lightseagreen;
-        position: absolute;
-        top: 120px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        z-index: -1;
-    }
-
-    .van-field__control {
-        color: #666;
-    }
-
-    #camera {
-        width: 23px;
-        height: 23px;
-        position: absolute;
-        top: 12px;
-        left: 206px;
-        z-index: 2;
-    }
-
-    .myimg {
-        z-index: 1;
-        border-radius: 80px;
-        position: absolute;
-        top: -40px;
-        left: 38%
     }
 </style>
 <style>
     .van-field__control {
+        margin: 0.3rem;
+
         color: #666;
+    }
+
+    .van-cell {
+        font-size: 0.6rem;
+    }
+
+    .van-field__control--right {
+        font-size: 0.6rem;
     }
 </style>

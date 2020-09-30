@@ -1,0 +1,129 @@
+@import "../common.less";
+body {
+    min-width:320px;
+    width:15rem;// 750 / 50
+    margin:0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+
+@baseFont: 50;
+
+.w {
+    width:15rem;
+}
+.h {
+    height: 450rem / @baseFont;
+}
+.diaryC {
+    position: relative;
+    .bg-d {
+        position: relative;
+        background:#b0e6d1;
+        
+    }
+    #camera {
+        position: absolute;
+        width: 100rem / @baseFont;
+        height: 100rem / @baseFont;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-20%);
+        z-index: 2;
+    }
+}
+
+//diaryDetail
+.detail {
+    position: relative;
+    top: 100rem / @baseFont;
+    .diarycontent {
+        position: relative;
+        left: 40rem / @baseFont;
+        top: 30rem / @baseFont;
+    }
+    .contentTitle {
+        position: relative;
+        font-size: 58rem / @baseFont;
+    }
+    .smallword {
+        font-size: 30rem / @baseFont;
+        color: #707070;
+        letter-spacing: 10rem / @baseFont;
+      }
+}
+.edit_container {
+    position: relative;
+    top: 160rem / @baseFont;
+    left: 10rem / @baseFont;
+}
+
+//drafts
+.drafts {
+    position: relative;
+    top: 80rem / @baseFont;
+    .dlist {
+        margin-top: 20rem / @baseFont;
+        margin-left: 40rem / @baseFont;
+        
+    }
+    .dimg {
+        width: 200rem / @baseFont;
+        height: 200rem / @baseFont;
+        float:left;
+    }
+    .itemcontent {
+        letter-spacing: 6rem / @baseFont;
+        margin-top:1px;
+        width:60%;
+        font-size: 40rem / @baseFont;
+    }
+}
+
+//list
+.dList {
+    margin-top: 110rem / @baseFont;
+    .diarylist{
+        position: relative;
+        width:94%;
+        height: 300rem / @baseFont;
+        left: 20rem / @baseFont;
+        border-radius:10px;
+        margin-bottom: 30rem / @baseFont;
+        box-shadow: #eeeded 0px 0px 2px 2px;
+      }
+}
+
+  #listLeft{
+    position: relative;
+    top:20px;
+    left:20px;
+    width:56%;
+    height:100px;
+    float: left;
+  }
+  #titles{
+    position: absolute;
+    font-size:19px;
+    margin-top:8px;
+    margin-bottom:8px;
+  }
+  #moods{
+    position: relative;
+    top:48px;
+    font-size:14px;
+    color:#707070;
+    letter-spacing:3px;
+  }
+  #photos{
+    float:left;
+    position: relative;
+    right:-20px;
+    top:4px;
+  }
+  #photos img{
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+

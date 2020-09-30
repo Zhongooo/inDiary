@@ -1,0 +1,173 @@
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #fff;
+}
+.w {
+  width: 15rem;
+}
+.h {
+  height: 9rem;
+}
+.diaryC {
+  position: relative;
+}
+.diaryC .bg-d {
+  position: relative;
+  background: #b0e6d1;
+}
+.diaryC #camera {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 2;
+}
+.detail {
+  position: relative;
+  top: 2rem;
+}
+.detail .diarycontent {
+  position: relative;
+  left: 0.8rem;
+  top: 0.6rem;
+}
+.detail .contentTitle {
+  position: relative;
+  font-size: 1.16rem;
+}
+.detail .smallword {
+  font-size: 0.6rem;
+  color: #707070;
+  letter-spacing: 0.2rem;
+}
+.edit_container {
+  position: relative;
+  top: 3.2rem;
+  left: 0.2rem;
+}
+.drafts {
+  position: relative;
+  top: 1.6rem;
+}
+.drafts .dlist {
+  margin-top: 0.4rem;
+  margin-left: 0.8rem;
+}
+.drafts .dimg {
+  width: 4rem;
+  height: 4rem;
+  float: left;
+}
+.drafts .itemcontent {
+  letter-spacing: 0.12rem;
+  margin-top: 1px;
+  width: 60%;
+  font-size: 0.8rem;
+}
+.dList {
+  margin-top: 2.2rem;
+}
+.dList .diarylist {
+  position: relative;
+  width: 94%;
+  height: 6rem;
+  left: 0.4rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  box-shadow: #eeeded 0px 0px 2px 2px;
+}
+#listLeft {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 56%;
+  height: 100px;
+  float: left;
+}
+#titles {
+  position: absolute;
+  font-size: 19px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#moods {
+  position: relative;
+  top: 48px;
+  font-size: 14px;
+  color: #707070;
+  letter-spacing: 3px;
+}
+#photos {
+  float: left;
+  position: relative;
+  right: -20px;
+  top: 4px;
+}
+#photos img {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
