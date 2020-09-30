@@ -14,7 +14,7 @@
                 <img id="moodimg"
                     :src='require(`../../../../koaS/koaPass/public/diaryimg/${item.pushcontent.cover_img}`)'>
                 <div class="content">
-                    <span style="font-size:14px;color:#828282;">{{item.pushcontent.cover_content}}
+                    <span style="font-size:14px;color:#666;">{{item.pushcontent.cover_content}}
                     </span>
                 </div>
                 <van-cell style="position: relative;top:10px;" title="戳我变开心" is-link to="/user/moodpushContent" />
